@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Checkbox</title>
+  </head>
+  <body>
+    <main class="site-main">
+      <section class="checkbox">
+        <div class="container">
+          <section class="checkbox__inner">
+            <h2 class="checkbox__title">Qaysi sport turiga qiziqasiz?</h2>
+            <form
+              action="https://echo.htmlacademy.ru/"
+              class="checkbox__form"
+              method="post"
+              autocomplete="off"
+            >
+              <input
+                class="sport__input-tennis visually-hidden"
+                type="checkbox"
+                id="tennis"
+                name="ping_pong"
+                disabled
+              />
+              <label
+                class="sport__label sport__label-tennis sport"
+                for="tennis"
+              >
+                <span class="sport__style hand"></span>
+                Stol tennisi
+              </label>
+
+              <input
+                class="sport__input-baskedbol visually-hidden"
+                type="checkbox"
+                id="baskedbol"
+                name="baskedbol"
+                checked
+                disabled
+              />
+              <label
+                class="sport__label sport__label-baskedbol"
+                for="baskedbol"
+              >
+                <span class="sport__style handes"></span>
+                Baskedbol
+              </label>
+
+              <input
+                class="sport__input-voleybol visually-hidden"
+                type="checkbox"
+                id="voleybol"
+                name="voleybol"
+              />
+              <label class="sport__label sport__label-voleybol" for="voleybol">
+                <span class="sport__style foot"></span>
+                Voleybol
+              </label>
+
+              <input
+                class="sport__input-hokkey visually-hidden"
+                type="checkbox"
+                id="hokkey"
+                name="hokkey"
+              />
+              <label class="sport__label sport__label-hokkey" for="hokkey">
+                <span class="sport__style foots"></span>
+                Hokkey
+              </label>
+            </form>
+          </section>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

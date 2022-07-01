@@ -1,0 +1,112 @@
+/* general-styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+/* /general-styles */
+
+/* form-styles */
+.sport__label {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox__title {
+  margin: 40px 0;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.sport__input-tennis:checked ~ .sport__label-tennis > .hand {
+  background-image: url("../images/table-tennis.png");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+  border-color: #000;
+}
+
+.sport__input-tennis:disabled ~ .sport__label-tennis > .hand {
+  background-color: #eee;
+  opacity: 0.6;
+}
+
+.sport__input-tennis:disabled ~ .sport__label-tennis {
+  opacity: 0.4;
+}
+
+.sport__input-baskedbol:checked ~ .sport__label-baskedbol > .handes {
+  background-image: url("../images/basketball-ball.png");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+  border-color: #000;
+}
+
+.sport__input-baskedbol:disabled ~ .sport__label-baskedbol > .handes {
+  background-color: #eee;
+  opacity: 0.6;
+}
+
+.sport__input-baskedbol:disabled ~ .sport__label-baskedbol {
+  opacity: 0.4;
+}
+
+.sport__input-voleybol:checked ~ .sport__label-voleybol > .foot {
+  background-image: url("../images/volleyball-ball.png");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+  border-color: #000;
+}
+
+.sport__input-hokkey:checked ~ .sport__label-hokkey > .foots {
+  background-image: url("../images/hockey-puck.png");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+  border-color: #000;
+}
+
+.sport__label {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.sport__style {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+  border: 2px solid #ccccc5;
+  border-radius: 5px;
+}
+
+/* /form-styles */
